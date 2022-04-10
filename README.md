@@ -4,6 +4,7 @@
 树莓派<br>
 安装pygame<br>
 requests<br>
+在post-request.py中需修改你的api-key就可以了
 <br>
 <br><br><br><br><br><br><br>
 作者大一，用来参加比赛混分的项目<br>
