@@ -4,7 +4,7 @@ import json
 from jsonpath import jsonpath
 from aip import AipSpeech
 def wehather():
-    url = "https://api.seniverse.com/v3/weather/now.json?key=SczjlbdgCuaWr74Sr&location=chengdu&language=zh-Hans&unit=c"
+    url = "https://api.seniverse.com/v3/weather/now.json?key=你的心知天气apikey&location=chengdu&language=zh-Hans&unit=c"
     resp = requests.get(url)
     area_name = jsonpath(resp.json(),'$..name')
     arer_temperature = jsonpath(resp.json(),'$..temperature')
@@ -47,9 +47,9 @@ def now_day():
 
 def autop(text0):
     """ 你的 APPID AK SK """
-    APP_ID = '25568204'
-    API_KEY = 'mLksFC6spBCXV8Kdx4G6sySD'
-    SECRET_KEY = 'Za4lpA5hS1LuhDjTmXeNV78Ocho7xAiT'
+    APP_ID = '百度智能云'
+    API_KEY = '百度智能云'
+    SECRET_KEY = '百度智能云'
 
     client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
     result  = client.synthesis(f'{text0}', 'zh', 1, {
